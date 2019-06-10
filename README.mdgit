@@ -1,0 +1,1 @@
+"# c-project"  initgit add README.mdgit commit -m "first commit"git remote add origin https://github.com/lem24/c-project.gitgit push -u origin master
