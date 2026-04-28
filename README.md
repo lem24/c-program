@@ -1,4 +1,4 @@
-# 🐍 Python CLI Prompt Template
+# 🐍 Python CLI Prompt Template V 1.1
 
 > A structured, reusable prompt template for building any Python CLI project with AI assistance — from idea to working code, one prompt at a time.
 
