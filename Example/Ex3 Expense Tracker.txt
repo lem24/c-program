@@ -1,0 +1,73 @@
+Build a CLI Expense Tracker in Python.
+
+## What it does:
+Tracks personal daily expenses from the terminal.
+Users can log, categorize, view, and summarize their spending over time.
+
+## Target Users:
+Individuals who want a lightweight, no-frills personal finance tracker
+without using a spreadsheet or web app.
+
+## Commands:
+- add: logs a new expense with amount, category, and optional note
+- list: shows all expenses, filterable by category or date range
+- delete: removes an expense by ID
+- summary: shows total spending grouped by category
+- export: exports all expenses to a CSV file
+- clear: deletes all expenses (with confirmation prompt)
+
+## Data \& Storage:
+- Storage type: SQLite
+- Data to store: id, amount, category, note, date
+- File location: \~/.expensetracker/expenses.db
+
+## Technical Requirements:
+- Language: Python 3.10+
+- CLI library: click
+- External libraries: rich (for tables and colored output), tabulate
+- Standard library only: no
+- OS support: all
+
+## Input \& Output:
+- Input method: CLI arguments + interactive confirmation for destructive actions
+- Output format: colored table using rich
+- Verbose/quiet mode: no
+
+## Error Handling:
+- On missing amount or category: show usage help with examples
+- On invalid date format: show expected format (YYYY-MM-DD) and exit
+- On invalid ID: show friendly error — "No expense found with ID X"
+- On DB errors: show friendly message and log error to file
+
+## Authentication \& Security:
+- Requires login: no
+- Auth method: none
+
+## Configuration:
+- Config file: yes — \~/.expensetracker/config.json
+- Default values: default currency = "USD", default date = today
+
+## Code Quality:
+- Add docstrings to all functions and classes
+- Handle all errors gracefully with friendly messages
+- Follow PEP 8 style
+- Use type hints throughout
+- Logging: yes — errors logged to \~/.expensetracker/error.log
+
+## Testing:
+- Include unit tests: yes
+- Test framework: pytest
+- Test coverage target: core logic (add, delete, summary, export)
+
+## Packaging \& Distribution:
+- Entry point: expense
+- Installable via pip: yes
+- Include requirements.txt: yes
+- Include pyproject.toml: yes
+
+## Deliverables (do not write code yet):
+1. Folder and file structure
+2. One-line description of each file's responsibility
+3. List of all CLI commands with example usage
+4. List of dependencies and why each is needed
+```

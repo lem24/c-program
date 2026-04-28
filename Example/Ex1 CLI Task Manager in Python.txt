@@ -1,0 +1,56 @@
+Build a CLI Task Manager in Python.
+
+## What it does:
+Manages personal to-do items from the terminal.
+Users can add, view, complete, and delete tasks.
+
+## Target Users:
+Personal use by developers who prefer terminal workflows.
+
+## Commands:
+- add: adds a new task with a title and optional due date
+- list: shows all tasks, filterable by status (pending/done)
+- done: marks a task as completed by ID
+- delete: removes a task by ID
+- clear: deletes all completed tasks
+
+## Data & Storage:
+- Storage type: JSON file
+- Data to store: id, title, status, due_date, created_at
+- File location: ~/.taskmanager/tasks.json
+
+## Technical Requirements:
+- Language: Python 3.10+
+- CLI library: click
+- External libraries: rich (for colored table output)
+- OS support: all
+
+## Input & Output:
+- Input method: CLI arguments
+- Output format: colored table using rich
+- Verbose/quiet mode: no
+
+## Error Handling:
+- On missing input: show usage help
+- On invalid ID: show friendly error message
+- On file errors: create file if missing, else show error
+
+## Code Quality:
+- Docstrings, PEP 8, type hints
+- Logging: no
+
+## Testing:
+- Include unit tests: yes
+- Framework: pytest
+- Coverage: core logic only
+
+## Packaging:
+- Entry point: task
+- Include requirements.txt: yes
+
+## Deliverables (do not write code yet):
+1. Folder and file structure
+2. One-line description of each file
+3. All CLI commands with example usage
+4. Dependencies and why each is needed
+```

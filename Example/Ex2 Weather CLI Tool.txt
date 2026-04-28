@@ -1,0 +1,65 @@
+Build a CLI Weather Tool in Python.
+
+## What it does:
+Fetches and displays current weather and forecasts from the terminal
+using the OpenWeatherMap API.
+
+## Target Users:
+Developers and power users who want weather without leaving the terminal.
+
+## Commands:
+- current: shows current weather for a city
+- forecast: shows 5-day forecast for a city
+- set-city: saves a default city to config
+- set-key: saves the API key to config
+
+## Data \& Storage:
+- Storage type: JSON config file
+- Data to store: default\_city, api\_key
+- File location: \~/.weathercli/config.json
+
+## Technical Requirements:
+- Language: Python 3.10+
+- CLI library: typer
+- External libraries: requests, rich
+- OS support: all
+
+## Input \& Output:
+- Input method: CLI arguments
+- Output format: colored terminal output with rich
+- Verbose/quiet mode: yes
+
+## Error Handling:
+- On invalid city: show friendly message with suggestions
+- On missing API key: prompt user to run set-key first
+- On network error: show offline message with cached data if available
+
+## Authentication \& Security:
+- Requires login: yes
+- Auth method: API key (OpenWeatherMap)
+- Store credentials: yes — in \~/.weathercli/config.json
+
+## Configuration:
+- Config file: yes — \~/.weathercli/config.json
+- Environment variables: OPENWEATHER\_API\_KEY
+
+## Code Quality:
+- Docstrings, PEP 8, type hints
+- Logging: yes — to console (verbose mode only)
+
+## Testing:
+- Include unit tests: yes
+- Framework: pytest
+- Coverage: API parsing and config logic
+
+## Packaging:
+- Entry point: weather
+- Include requirements.txt: yes
+- Include pyproject.toml: yes
+
+## Deliverables (do not write code yet):
+1. Folder and file structure
+2. One-line description of each file
+3. All CLI commands with example usage
+4. Dependencies and why each is needed
+```
