@@ -1,0 +1,71 @@
+Build a CLI [TOOL NAME] in Python.
+
+## What it does:
+[Describe the main purpose in 1-2 sentences]
+
+## Target Users:
+[Who will use this? e.g., developers, students, personal use, teams]
+
+## Commands the user can run:
+- [command 1]: [what it does]
+- [command 2]: [what it does]
+- [command 3]: [what it does]
+- [command 4]: [what it does]
+
+## Data & Storage:
+- Storage type: [JSON file / SQLite / PostgreSQL / MySQL / CSV / in-memory / none]
+- Data to store: [list of fields, e.g. id, title, status, date, tags]
+- File/DB location: [e.g., ./data/tasks.json or ~/.myapp/db.sqlite]
+
+## Technical Requirements:
+- Language: Python 3.x (minimum version: [3.8 / 3.10 / 3.11])
+- CLI library: [argparse / click / typer]
+- External libraries allowed: [yes/no — list them if yes, e.g. rich, requests, pydantic]
+- Standard library only: [yes/no]
+- OS support: [Windows / macOS / Linux / all]
+
+## Input & Output:
+- Input method: [CLI arguments / interactive prompts / config file / piped stdin]
+- Output format: [plain text / colored terminal / JSON / CSV / table]
+- Verbose/quiet mode: [yes/no]
+
+## Error Handling:
+- On missing input: [show usage help / prompt user / exit with error message]
+- On invalid data: [skip and warn / abort / ask to retry]
+- On file/DB errors: [show friendly message / log to file / both]
+
+## Authentication & Security:
+- Requires login: [yes/no]
+- Auth method: [API key / username+password / token / none]
+- Store credentials: [yes — in config file / no]
+
+## Configuration:
+- Config file: [yes/no — location if yes, e.g., ~/.myapp/config.json]
+- Environment variables: [list any, e.g. MYAPP_API_KEY]
+- Default values: [list key defaults]
+
+## Code Quality:
+- Add docstrings to all functions and classes
+- Handle all errors gracefully with friendly messages
+- Follow PEP 8 style
+- Use type hints throughout
+- Logging: [yes — to file / yes — to console / no]
+
+## Testing:
+- Include unit tests: [yes/no]
+- Test framework: [unittest / pytest]
+- Test coverage target: [e.g., core logic only / all functions]
+
+## Packaging & Distribution:
+- Entry point: [e.g., myapp or python main.py]
+- installable via pip: [yes/no]
+- Include requirements.txt: [yes/no]
+- Include setup.py or pyproject.toml: [yes/no]
+
+## Deliverables (do not write code yet):
+1. Folder and file structure
+2. One-line description of each file's responsibility
+3. List of all CLI commands with example usage
+4. List of dependencies and why each is needed
+```
+
